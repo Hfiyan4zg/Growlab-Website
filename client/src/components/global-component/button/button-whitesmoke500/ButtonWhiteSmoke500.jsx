@@ -1,17 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-function ButtonWhiteSmoke500({ TEXT_BUTTON, WIDTH, URL }) {
+function ButtonWhiteSmoke500({ TEXT_BUTTON, WIDTH }) {
   return (
-    <Link to={URL}>
-      <button
-        className={`px-[64px] py-[16px] ${WIDTH}  flex justify-center items-center rounded-[10px] bg-whiteSmoke500 border-[1px] `}
-      >
-        <p className="shrink-0 text-[16px] font-medium leading-[24px] text-black500">
-          {TEXT_BUTTON}
-        </p>
-      </button>
-    </Link>
+    <button
+      className={`px-[64px] py-[16px] ${WIDTH}  flex justify-center items-center rounded-[10px] bg-whiteSmoke500 border-[1px] `}
+    >
+      <p className="shrink-0 text-[16px] font-medium leading-[24px] text-black500">
+        {TEXT_BUTTON}
+      </p>
+    </button>
   );
 }
 

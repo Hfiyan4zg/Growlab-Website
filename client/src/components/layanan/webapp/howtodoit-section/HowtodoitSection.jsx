@@ -65,7 +65,7 @@ const HowtodoitSection = () => {
       {
         title: "Research",
         deskripsi:
-          "Kami memulai dengan mendengarkan kebutuhan unik Anda. Analisis mendalam terhadap target audiens dan tujuan bisnis memandu perencanaan kami. Rencana ini menjadi dasar strategi desain yang akan memberikan pengalaman pengguna yang luar biasa.",
+          "Sebagai langkah awal, kami akan memulai dengan memahami brand dan audiens kamu. Analisis menyeluruh tentang audiens dan tujuan memandu perencanaan strategis kami, menetapkan dasar yang kuat untuk mengelola media sosial kamu dengan cerdas.",
         pic: icon.puzzle,
         num: 1,
       },
@@ -88,6 +88,36 @@ const HowtodoitSection = () => {
         deskripsi:
           "Setelah konten diunggah, kami terus memonitor kinerja kampanye. Melalui analisis data dan statistik, kami mengukur engagement, pertumbuhan pengikut, dan konversi. Hasil ini membantu kami menyesuaikan strategi, memaksimalkan efektivitas kampanye, dan memberikan laporan berkala kepada klien untuk transparansi dan evaluasi bersama",
         pic: icon.analyze,
+        num: 4,
+      },
+    ],
+    [
+      {
+        title: "Research",
+        deskripsi:
+          "Kami memulai dengan melakukan explorasi terhadap  nilai, visi, dan kepribadian merek brand kamu melalui dengan riset mendalam. Dengan memahami basis merek, desain logo dapat memberikan refleksi yang akurat dan kuat terhadap identitas perusahaan",
+        pic: icon.puzzle,
+        num: 1,
+      },
+      {
+        title: "Designing",
+        deskripsi:
+          "Kami mengembangkan konsep logo berdasarkan hasil riset. Melalui iterasi yang cermat, kami selalu memastikan bahwa desain yang kami ciptakan dapat mencerminkan esensi merek dan memenuhi kebutuhan bisnismu. Proses ini memastikan logo yang dirancang sesuai dengan visi & misi bisnismu",
+        pic: icon.design,
+        num: 2,
+      },
+      {
+        title: "Simplify",
+        deskripsi:
+          "Kami menyederhanakan elemen-elemen desain untuk meningkatkan daya ingat dan identifikasi terhadap brand kamu. Berfokus pada elemen inti yang kuat dan jelas agar logo dapat dengan mudah berkomunikasi dengan audiens target, serta menciptakan kesan yang terbaik dari bisnismu",
+        pic: icon.designIdeas,
+        num: 3,
+      },
+      {
+        title: "Finishing",
+        deskripsi:
+          "Berdasarkan umpan balik, kami melakukan revisi dan penyempurnaan pada desain logo untuk memastikan desain akhir yang kami ciptakan mencapai kesempurnaan estetika dan efektivitas. Setelah itu, kami akan melakukan penyerahan logo beserta dokumen panduan penggunaan logo yang konsisten & efektif",
+        pic: icon.drawerDone,
         num: 4,
       },
     ],
@@ -145,53 +175,6 @@ const HowtodoitSection = () => {
             );
           })}
         </div>
-
-        {/* <div className="flex">
-          <div className="mt-6 mr-6">
-            {works.map((work, id) => {
-              return (
-                <div
-                  for={work.title}
-                  key={id}
-                  className="flex flex-col items-center"
-                >
-                  <h2 className="text-[22px] font-medium text-[#d9d9d9] hover:text-black">
-                    0{work.num}
-                  </h2>
-                  {id === 3 ? (
-                    <></>
-                  ) : (
-                    <>
-                      <span className="h-[160px] w-1 bg-[#d9d9d9] hover:bg-gradient-to-b hover:from-black hover:from-50% hover:to-[#d9d9d9] hover:to-50%"></span>
-                    </>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="flex flex-col">
-            {works.map((work, id) => {
-              return (
-                <div
-                  key={id}
-                  id={work.title}
-                  className="opacity-40 hover:opacity-100  flex justify-center w-[1024px] shadow-customSm p-6 mb-8 cursor-pointer"
-                >
-                  <img src={work.pic} alt={work.title} className="mr-6" />
-                  <div className="flex flex-col">
-                    <h1 className="mb-4 font-heebo text-[22px] font-bold">
-                      {work.title}
-                    </h1>
-                    <p className="font-heebo font-light leading-6">
-                      {work.deskripsi}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div> */}
       </div>
     </div>
   );

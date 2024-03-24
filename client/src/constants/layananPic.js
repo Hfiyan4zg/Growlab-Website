@@ -9,6 +9,11 @@ import consumerInsight from "../assets/layanan-pic/social-media-management-1.png
 import creativeCampaign from "../assets/layanan-pic/social-media-management-2.png";
 import calenderEditorial from "../assets/layanan-pic/social-media-management-3.png";
 import peformanceMonitoring from "../assets/layanan-pic/social-media-management-4.png";
+import desainLogo from "../assets/layanan-pic/desain-logo.png";
+import brandPersonality from "../assets/layanan-pic/desain-logo-1.png";
+import pixelPerfect from "../assets/layanan-pic/desain-logo-2.png";
+import mockupDesign from "../assets/layanan-pic/desain-logo-3.png";
+import HaKI from "../assets/layanan-pic/desain-logo-4.png";
 
 const layananPic = {
   layananWebsiteAplikasi,
@@ -22,6 +27,11 @@ const layananPic = {
   calenderEditorial,
   creativeCampaign,
   peformanceMonitoring,
+  desainLogo,
+  brandPersonality,
+  pixelPerfect,
+  mockupDesign,
+  HaKI,
 };
 
 export default layananPic;

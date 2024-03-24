@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { dataLayanan } from "../../../../constants/data";
 import ButtonWhiteSmoke500 from "../../../global-component/button/button-whitesmoke500/ButtonWhiteSmoke500";
 import NavigasiLayanan from "./navigasi-layanan/NavigasiLayanan";
@@ -45,11 +45,12 @@ const HeroSection = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start">
-              <ButtonWhiteSmoke500
-                WIDTH={"w-[260px]"}
-                TEXT_BUTTON={"Lihat Paket"}
-                URL={"https://wa.me/085236455624"}
-              />
+              <Link to={"https://wa.me/085236455624"}>
+                <ButtonWhiteSmoke500
+                  WIDTH={"w-[260px]"}
+                  TEXT_BUTTON={"Lihat Paket"}
+                />
+              </Link>
             </div>
           </div>
 

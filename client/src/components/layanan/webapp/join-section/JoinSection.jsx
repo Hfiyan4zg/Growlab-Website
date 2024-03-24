@@ -2,7 +2,7 @@ import React from "react";
 import ButtonWhiteSmoke500 from "../../../global-component/button/button-whitesmoke500/ButtonWhiteSmoke500";
 import ButtonBorderWhitesmoke500 from "../../../global-component/button/button-borderwhitesmoke500/ButtonBorderWhitesmoke500";
 import { dataLayanan } from "../../../../constants/data";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function JoinSection() {
   const { title } = useParams();
@@ -34,7 +34,7 @@ function JoinSection() {
       title: "Raih Potensi Optimal Bisnismu Bersama Kami",
     },
     {
-      // title: "Mari Ciptakan Project Impianmu Bersama Kami",
+      title: "Mari Ciptakan Identitas Brand kamu bersama Kami",
     },
   ];
 
@@ -65,16 +65,21 @@ function JoinSection() {
                 </p>
               </div>
               <div className="flex w-full items-start gap-[24px] ">
-                <ButtonBorderWhitesmoke500
-                  TEXT_BUTTON={"Hubungi Kami"}
-                  WIDTH={"max-w-[200px]"}
-                  RESPONSIF={"flex"}
-                />
-                <button className="px-[64px] py-[16px] w-[232px] flex justify-center items-center rounded-[10px] bg-whiteSmoke500 border-[1px] ">
-                  <p className="shrink-0 text-[16px] font-medium leading-[24px] text-black500">
-                    Lihat Paket
-                  </p>
-                </button>
+                <Link to={"https://wa.me/085236455624"}>
+                  <ButtonBorderWhitesmoke500
+                    TEXT_BUTTON={"Hubungi Kami"}
+                    WIDTH={"max-w-[200px]"}
+                    RESPONSIF={"flex"}
+                  />
+                </Link>
+
+                <Link to={"https://wa.me/085236455624"}>
+                  <button className="px-[64px] py-[16px] w-[232px] flex justify-center items-center rounded-[10px] bg-whiteSmoke500 border-[1px] ">
+                    <p className="shrink-0 text-[16px] font-medium leading-[24px] text-black500">
+                      Lihat Paket
+                    </p>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -105,16 +110,20 @@ function JoinSection() {
                 </p>
               </div>
               <div className="flex  w-screen items-start justify-center overflow-y-scroll gap-[16px]  ">
-                <ButtonBorderWhitesmoke500
-                  TEXT_BUTTON={"Hubungi Kami"}
-                  WIDTH={"max-w-[152px]"}
-                  RESPONSIF={"flex"}
-                />
+                <Link to={"https://wa.me/085236455624"}>
+                  <ButtonBorderWhitesmoke500
+                    TEXT_BUTTON={"Hubungi Kami"}
+                    WIDTH={"max-w-[152px]"}
+                    RESPONSIF={"flex"}
+                  />
+                </Link>
 
-                <ButtonWhiteSmoke500
-                  TEXT_BUTTON={"Lihat Paket"}
-                  WIDTH={"w-[190px]"}
-                />
+                <Link to={"https://wa.me/085236455624"}>
+                  <ButtonWhiteSmoke500
+                    TEXT_BUTTON={"Lihat Paket"}
+                    WIDTH={"w-[190px]"}
+                  />
+                </Link>
               </div>
             </div>
           </div>

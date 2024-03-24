@@ -6,21 +6,17 @@ import HeroSection from "../../components/layanan/webapp/hero-section/HeroSectio
 import ServiceSection from "../../components/layanan/webapp/service-section/ServiceSection";
 import HowtodoitSection from "../../components/layanan/webapp/howtodoit-section/HowtodoitSection";
 
-const WebApp = () => {
+const Layanan = () => {
   return (
     <div className=" flex flex-col justify-center items-center shrink-0">
       <HeroSection />
       <ServiceSection />
       <HowtodoitSection />
-<<<<<<< HEAD
       {/* <LanggananSection /> */}
-=======
-      <LanggananSection />
->>>>>>> 7e0b7eda4c93c97961c6ae700c4bceb7db5ffe10
       <Faq />
       <JoinSection />
     </div>
   );
 };
 
-export default WebApp;
+export default Layanan;

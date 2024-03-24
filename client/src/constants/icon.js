@@ -18,6 +18,8 @@ import gear from "../assets/icon/gear.png";
 import schedule from "../assets/icon/schedule.png";
 import analyze from "../assets/icon/analyze.png";
 import insight from "../assets/icon/insight.png";
+import designIdeas from "../assets/icon/design-ideas.png";
+import drawerDone from "../assets/icon/drawer-done.png";
 import koneksi from "../assets/icon/koneksi.png";
 import megaphone from "../assets/icon/megaphone.png";
 import profile from "../assets/icon/profile.png";
@@ -107,6 +109,8 @@ const icon = {
   gear,
   analyze,
   schedule,
+  designIdeas,
+  drawerDone,
 };
 
 export default icon;

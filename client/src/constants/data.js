@@ -28,8 +28,11 @@ const dataLayanan = [
       "Raih potensi optimal bisnis kamu dengan layanan Social Media Management kami. Tim ahli kami akan merancang strategi terbaik untuk menjangkau target audiens kamu",
   },
   {
-    title: "Desain Logo",
+    title: "Desain Logo Brand",
     navi: "/desain-logo",
+    pic: layananPic.desainLogo,
+    deskripsi:
+      "Bangun identitas kuat untuk bisnismu dengan layanan Desain Logo Brand kami. Tim kreatif kami akan menciptakan logo yang unik dan menggambarkan essensi brandmu secara visual",
   },
   {
     title: "Live Streaming & Content",
@@ -86,8 +89,7 @@ const dataService = [
   },
   {
     title: "Desain Logo",
-    deskripsi:
-      "Kamu bakal belajar banyak hal yang bisa ningkatin omset bisnis kamu",
+    deskripsi: "Kami Selalu Mencerminkan Identitas Brand",
     pic: images.desainLogo,
   },
   {

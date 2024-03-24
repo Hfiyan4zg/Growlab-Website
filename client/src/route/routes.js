@@ -44,7 +44,7 @@ import LmsKelas from "../pages/lms-kelas/LmsKelas";
 import Verifikasi from "../pages/verifikasi/Verifikasi";
 import ResetPassword from "../pages/reset-password/ResetPassword";
 import RequestReset from "../pages/request-reset/RequestReset";
-import WebApp from "../pages/webapp-services/WebApp";
+import Layanan from "../pages/layanan/Layanan";
 
 const routes = [
   <Route
@@ -186,11 +186,11 @@ const routes = [
     path="/:title"
     element={
       <Protection publicSide={true}>
-        <WebApp />
+        <Layanan />
       </Protection>
     }
   >
-    <Route path="webapp-services" element={<WebApp />} />
+    <Route path="layanan" element={<Layanan />} />
   </Route>,
 
   <Route
