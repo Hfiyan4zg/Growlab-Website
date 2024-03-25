@@ -119,7 +119,7 @@ const navigationData = [
   {
     BUTTON_TEXT: "Karir",
     data: null,
-    navi: "#",
+    navi: "/career",
   },
   {
     BUTTON_TEXT: "Tentang Kami",
