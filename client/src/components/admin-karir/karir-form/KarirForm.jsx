@@ -10,6 +10,7 @@ import {
 } from "draft-js";
 import { FormEvent, useEffect } from "react";
 import toolbarStyles from "../../global-component/admin-toolbar-style/toolbarStyles";
+import Swal from "sweetalert2";
 const Editor = React.lazy(
   () => import('react-draft-wysiwyg').then(module => ({ default: module.Editor }))
 );
@@ -24,6 +25,36 @@ function KarirForm({edit}) {
   useEffect(()=>{
       setLoaded(true);
   },[])
+
+
+  async function buttonTest(event) {
+    // event.preventDefault();
+    // Lakukan proses async di sini
+    // await doAsyncProcess();
+    Swal.fire({
+        position: "center",
+        // icon: "success",
+        iconHtml: `<img src="${icon.greensuccess}"/>`,
+        iconColor: "#63E6BE",
+        title: "Lowongan Baru Telah Ditambahkan",
+        text: "Silakan Cek Dashboard",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    
+      // Swal.fire({
+      //   position: "center",
+      //   icon: "error",
+      //   // iconHtml: `<img src="${icon.greensuccess}"/>`,
+      //   // iconColor: "transparent",
+      //   title: "Lowongan Gagal Ditambahkan",
+      //   text: "Silakan Isi Kembali",
+      //   showConfirmButton: false,
+      //   timer: 3000,
+      // });
+  }
+  
+
   return (
     <div className="w-4/5 min-[320px]:max-md:w-[90%] flex flex-col grow-0 px-28 py-8 min-[320px]:max-md:py-2 md:max-lg:px-16 min-[320px]:max-md:px-1">
       {edit ? 
@@ -32,7 +63,7 @@ function KarirForm({edit}) {
       (
         <AdminHeader title="Tambah Lowongan" />
       )}
-      <form action="">
+      <form >
         {edit && (
           <div className="flex flex-row gap-5 mb-8 justify-center md:justify-start ">
           <button className="flex flex-row w-fit h-fit items-center gap-3 border-2 border-black p-2 rounded-xl min-[320px]:max-md:border-b-4 min-[320px]:max-md:border-r-4">
@@ -255,12 +286,24 @@ function KarirForm({edit}) {
           </div>
         </div>
         <div className="flex my-12 justify-center" >
-        <button
-          type="submit"
+        {edit ? 
+          <></> :
+          (
+            <button
+            type="button"
+            onClick={buttonTest}
+            className="w-1/4 min-[320px]:max-xl:w-1/2 h-16 bg-whiteSmoke500 rounded-2xl border border-black shadow-xl "
+            >
+              <p className="font-heebo text-[20px] min-[425px]:max-md:text-[18px] min-[320px]:max-[425px]:text-[16px] font-bold">Submit</p>
+            </button>
+          )}
+        {/* <button
+          type="button"
+          onClick={buttonTest}
           className="w-1/4 min-[320px]:max-xl:w-1/2 h-16 bg-whiteSmoke500 rounded-2xl border border-black shadow-xl "
         >
           <p className="font-heebo text-[20px] min-[425px]:max-md:text-[18px] min-[320px]:max-[425px]:text-[16px] font-bold">Submit</p>
-        </button>
+        </button> */}
         </div>
       </form>
     </div>

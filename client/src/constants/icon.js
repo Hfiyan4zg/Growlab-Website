@@ -39,7 +39,7 @@ import playOutLine from "../assets/icon/play_outline.svg";
 import iconArticle from "../assets/icon/icon-article.png";
 import iconUpload from "../assets/icon/icon-upload.png";
 import iconAdd from "../assets/icon/icon-add.png";
-
+import greensuccess from "../assets/icon/green-success.png";
 import searchIcon from "../assets/icon/search_icon.png";
 import bookOpenSold from "../assets/icon/book_open_solid.png";
 import signal from "../assets/icon/signal.png";
@@ -131,6 +131,7 @@ const icon = {
   iconDelete,
   drawerDone,
   designIdeas,
+  greensuccess,
 };
 
 export default icon;
